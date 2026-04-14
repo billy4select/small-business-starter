@@ -35,9 +35,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     build: {
-      cssMinify: 'lightningcss',
-      // --- 重點修正處 ---
-      // 指定一個 Lightning CSS 支援的編譯目標
+      // 將 lightningcss 改為 esbuild
+      // esbuild 對於目標版本的容忍度較高，且與 Node 22 相容性更好
+      cssMinify: 'esbuild', 
       target: 'es2022', 
     },
   },
