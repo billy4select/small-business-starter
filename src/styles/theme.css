@@ -12,11 +12,15 @@
 
 @theme {
   /* ── Brand Colors ───────────────────────────────────────────────── */
-  --color-primary:       #1B3A6B;
-  --color-primary-light: #2563EB;
+  /* 主色：深藍黑，專業且能襯托黃色 Logo */
+  --color-primary:       #0F172A;
+  --color-primary-light: #334155;
   --color-primary-fg:    #ffffff;
-  --color-accent:        #F97316;
-  --color-accent-fg:     #ffffff;
+
+  /* 亮點色：你的黃色 Logo 色系 */
+  --color-accent:        #FACC15;
+  /* 重要：黃色背景上的文字需為深色才清晰 */
+  --color-accent-fg:     #0F172A;
 
   /* ── Neutral Scale ──────────────────────────────────────────────── */
   --color-background:    #ffffff;
