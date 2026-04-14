@@ -36,6 +36,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
     build: {
       cssMinify: 'lightningcss',
+      // --- 重點修正處 ---
+      // 指定一個 Lightning CSS 支援的編譯目標
+      target: 'es2022', 
     },
   },
 });
